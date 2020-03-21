@@ -1,0 +1,23 @@
+.title {
+    margin: 8% 0;
+}
+    .title__text {
+        font-family: OswaldBold;
+        font-size: 1.9rem;
+        &--mod-1 {
+            animation: 1.5s ease 0s 1 fadeinn;
+        }
+        &--mod-2 {
+            animation: 1.55s ease 0s 1 fadeinn;
+        }
+        &--mod-3 {
+            animation: 1.6s ease 0s 1 fadeinn;
+        }
+        &--mod-4 {
+            font-family: OswaldRegular;
+            font-size: 1rem;
+            color: rgb(216, 216, 216);
+            display: block;
+            animation: 4s ease 0s 1 fadeinn;
+        }
+    }

@@ -1,13 +1,14 @@
 import React from 'react';
-import './stylesheets/App.css';
-import Home from './components/Home';
-
+import './stylesheets/style.css';
+import SearchEngine from './components/SearchEngine';
+import {SearchContextProvider} from "../src/components/searchContext";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <SearchContextProvider>
+      <SearchEngine />
+    </SearchContextProvider>
   )
 }
+
 export default App;

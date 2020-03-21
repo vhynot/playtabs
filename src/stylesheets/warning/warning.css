@@ -1,0 +1,10 @@
+.warning {
+  margin-top: 4%;
+  margin-bottom: 12%;
+}
+
+.warning .warning__control {
+  font-family: OswaldExtraLight;
+  margin-top: 0;
+}
+/*# sourceMappingURL=warning.css.map */

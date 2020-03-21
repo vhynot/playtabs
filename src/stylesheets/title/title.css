@@ -1,0 +1,33 @@
+.title {
+  margin: 8% 0;
+}
+
+.title__text {
+  font-family: OswaldBold;
+  font-size: 1.9rem;
+}
+
+.title__text--mod-1 {
+  -webkit-animation: 1.5s ease 0s 1 fadeinn;
+          animation: 1.5s ease 0s 1 fadeinn;
+}
+
+.title__text--mod-2 {
+  -webkit-animation: 1.55s ease 0s 1 fadeinn;
+          animation: 1.55s ease 0s 1 fadeinn;
+}
+
+.title__text--mod-3 {
+  -webkit-animation: 1.6s ease 0s 1 fadeinn;
+          animation: 1.6s ease 0s 1 fadeinn;
+}
+
+.title__text--mod-4 {
+  font-family: OswaldRegular;
+  font-size: 1rem;
+  color: #d8d8d8;
+  display: block;
+  -webkit-animation: 4s ease 0s 1 fadeinn;
+          animation: 4s ease 0s 1 fadeinn;
+}
+/*# sourceMappingURL=title.css.map */

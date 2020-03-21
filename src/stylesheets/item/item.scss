@@ -1,0 +1,73 @@
+.item--wrapper {
+    display: block;
+    padding-bottom: 5%;
+}
+
+.item {
+   background: black;
+   border: 1px solid #781917;
+   border-radius: 4px;
+   width: 80%;
+   margin: 5% 10%;
+   margin-bottom: 9.765%;
+   padding: 10px;
+   padding-bottom: 5%;
+   height: 100%;
+   animation: fadein 1.2s;
+   &--active {
+       margin-bottom: 5%;
+   }
+   .item__title {
+       font-family: OswaldMedium;
+       display: block;
+   }
+   .item__artist {
+       font-family: OswaldExtraLight;
+       font-size: 0.9em;
+       display: block;
+   }
+   .item__arrow {
+       margin-top: 7%;
+       cursor: pointer;
+       padding: 2% 0;
+       &:hover {
+           animation: bounce 0.4s infinite alternate;
+       }
+   }
+   .item__arrow-180 {
+       transform: rotate(180deg);
+       margin: 4% 0;
+       padding: 2% 0;
+       cursor: pointer;
+       &:hover {
+           animation: bounceB 0.4s infinite alternate;
+       }
+   }
+   .item__info {
+       font-family: OswaldLight;
+       font-size: 0.8em;
+       display: block;
+       opacity: 0;
+       transition: 1s;
+       &--display {
+           display: none;
+       }
+   }
+   .item__available-tabs {
+       display: none;
+       &--display {
+           display: block;
+       }
+       .item__list-of-tabs {
+           display: flex;
+           justify-content: space-around;
+           margin: 2% 0;
+           &--display {
+               animation: 0.3s ease-in 0s 1 normal transitionOpacity;
+           }
+           .item__individual-tab {
+               list-style-type: none;
+           }
+       }
+   }
+}

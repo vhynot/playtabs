@@ -1,0 +1,62 @@
+@font-face {
+    font-family: OswaldExtraLight;
+    src: url('../fonts/static/Oswald-ExtraLight.ttf');
+  }
+
+@font-face {
+    font-family: OswaldLight;
+    src: url('../fonts/static/Oswald-Light.ttf');
+}
+
+@font-face {
+    font-family: OswaldRegular;
+    src: url('../fonts/static/Oswald-Regular.ttf');
+}
+
+@font-face {
+    font-family: OswaldMedium;
+    src: url('../fonts/static/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: OswaldBold;
+    src: url('../fonts/static/Oswald-Bold.ttf');
+}  
+
+@keyframes fadeinn{
+    0% { opacity:0; }
+    33% { opacity:0; }
+    100% { opacity:1; }
+}
+  
+@keyframes transitionOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(2px);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes bounceB {
+    from {
+        transform: translateY(2px) rotate(180deg);
+    }
+    to {
+        transform: translateY(-5px) rotate(180deg);
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

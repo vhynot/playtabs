@@ -1,0 +1,97 @@
+.item--wrapper {
+  display: block;
+  padding-bottom: 5%;
+}
+
+.item {
+  background: black;
+  border: 1px solid #781917;
+  border-radius: 4px;
+  width: 80%;
+  margin: 5% 10%;
+  margin-bottom: 9.765%;
+  padding: 10px;
+  padding-bottom: 5%;
+  height: 100%;
+  -webkit-animation: fadein 1.2s;
+          animation: fadein 1.2s;
+}
+
+.item--active {
+  margin-bottom: 5%;
+}
+
+.item .item__title {
+  font-family: OswaldMedium;
+  display: block;
+}
+
+.item .item__artist {
+  font-family: OswaldExtraLight;
+  font-size: 0.9em;
+  display: block;
+}
+
+.item .item__arrow {
+  margin-top: 7%;
+  cursor: pointer;
+  padding: 2% 0;
+}
+
+.item .item__arrow:hover {
+  -webkit-animation: bounce 0.4s infinite alternate;
+          animation: bounce 0.4s infinite alternate;
+}
+
+.item .item__arrow-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 4% 0;
+  padding: 2% 0;
+  cursor: pointer;
+}
+
+.item .item__arrow-180:hover {
+  -webkit-animation: bounceB 0.4s infinite alternate;
+          animation: bounceB 0.4s infinite alternate;
+}
+
+.item .item__info {
+  font-family: OswaldLight;
+  font-size: 0.8em;
+  display: block;
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.item .item__info--display {
+  display: none;
+}
+
+.item .item__available-tabs {
+  display: none;
+}
+
+.item .item__available-tabs--display {
+  display: block;
+}
+
+.item .item__available-tabs .item__list-of-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2% 0;
+}
+
+.item .item__available-tabs .item__list-of-tabs--display {
+  -webkit-animation: 0.3s ease-in 0s 1 normal transitionOpacity;
+          animation: 0.3s ease-in 0s 1 normal transitionOpacity;
+}
+
+.item .item__available-tabs .item__list-of-tabs .item__individual-tab {
+  list-style-type: none;
+}
+/*# sourceMappingURL=item.css.map */
