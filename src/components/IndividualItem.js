@@ -45,16 +45,16 @@ function IndividualItem({item}){
     });
 
     return (
-        <div className={`item ${toggleClass ? 'item--active': ''}`}>
+        <div className={`item ${toggleClass && 'item--active'}`}>
             <span className="item__title"> {title}</span>
             <span className="item__artist">{artist.name}</span>
             <img className={`${toggleClass ? 'item__arrow-180': 'item__arrow'}`} 
                  onClick={setToggle} 
                  src={arrow}
                  alt="arrow" />
-            <span className={`item__info ${toggleClass ? 'item__info--display': ''}`}>Check available tablatures</span>
-            <div className={`item__available-tabs ${toggleClass ? 'item__available-tabs--display': ''}`}>
-                <ul className={`item__list-of-tabs ${toggleClass ? 'item__list-of-tabs--display': ''}`}>  
+            <span className={`item__info ${toggleClass && 'item__info--display'}`}>Check available tablatures</span>
+            <div className={`item__available-tabs ${toggleClass && 'item__available-tabs--display'}`}>
+                <ul className={`item__list-of-tabs ${toggleClass && 'item__list-of-tabs--display'}`}>  
                     {mapTabTypes}
                 </ul>
             </div>

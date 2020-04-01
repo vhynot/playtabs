@@ -56,11 +56,11 @@ function SearchEngine(){
             </div>
             <SearchBar/>
             <div className="warning">
-                { isLoading ? <span className="warning__control">loading...</span> : ""}
-                {err === "noResult"  ? <span className="warning__control">Empty input</span> : "" }
-                {(songs.length > 0 && mapSongs.length === 0) || (err === "notEmptyInput" && songs.length === 0)  ? 
-                <span className="warning__control">No results for declared value</span> : "" }
-                { mapSongs.length > 0 ? <span className="warning__control"> Search results: {mapSongs.length}</span>: ""}
+                { isLoading && <span className="warning__control">loading...</span>}
+                {err === "noResult"  && <span className="warning__control">Empty input</span>}
+                {((songs.length > 0 && mapSongs.length === 0) || (err === "notEmptyInput" && songs.length === 0))  && 
+                <span className="warning__control">No results for declared value</span>}
+                { mapSongs.length > 0 && <span className="warning__control"> Search results: {mapSongs.length}</span>}
             </div>
             <div className="item-wrapper">
             {mapSongs}
