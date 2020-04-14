@@ -38,7 +38,7 @@ function SearchEngine(){
                           .map( song => {
                             return (
                                 <IndividualItem key={song.id}
-                                             item={song}/>
+                                                item={song}/>
                             )
                           });
 
@@ -56,7 +56,7 @@ function SearchEngine(){
             </div>
             <SearchBar/>
             <div className="warning">
-                { isLoading && <span className="warning__control">loading...</span>}
+                { isLoading && <span className="warning__control">Loading...</span>}
                 {err === "noResult"  && <span className="warning__control">Empty input</span>}
                 {((songs.length > 0 && mapSongs.length === 0) || (err === "notEmptyInput" && songs.length === 0))  && 
                 <span className="warning__control">No results for declared value</span>}

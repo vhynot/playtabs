@@ -14,10 +14,10 @@
             animation: 1.6s ease 0s 1 fadeinn;
         }
         &--mod-4 {
+            display: block;
+            color: rgb(216, 216, 216);
             font-family: OswaldRegular;
             font-size: 1rem;
-            color: rgb(216, 216, 216);
-            display: block;
             animation: 4s ease 0s 1 fadeinn;
         }
     }

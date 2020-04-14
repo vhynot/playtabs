@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import arrow from '../img/Arrow.svg';
+import PropTypes from "prop-types";
 
 function IndividualItem({item}){
     const {tabTypes, title, artist} = item;
@@ -61,5 +62,13 @@ function IndividualItem({item}){
         </div>
     )
 };
+
+IndividualItem.propTypes = {
+    item: PropTypes.shape({
+        tabTypes: PropTypes.arrayOf(PropTypes.string.isRequired),
+        title:  PropTypes.string.isRequired,
+        artist: PropTypes.object.isRequired
+    })
+}
 
 export default IndividualItem;
