@@ -1,21 +1,42 @@
+@import "./fonts&keyframes/fonts&keyframes.scss";
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: OswaldRegular;
-    color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: OswaldRegular;
 }
 
 .app {
+  min-height: 100vh;
+  max-width: 100vw;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  background: black;
+  font-size: 16px;
+  transition: all 1s;
+  &--background-appear {
     background: url(../img/music.jpg) no-repeat center center fixed; 
     background-size: cover;
-    font-size: 16px;
-    min-height: 100vh;
-    max-width: 100vw;
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom: 5%;
+  }
  }
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 10px;
+  background-color: transparent;
+}
+  
+::-webkit-scrollbar-track {
+  background: #010108;
+}
+  
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: grey;
+}
 
 @import "./logo/logo.scss";
 @import "./title/title.scss";
@@ -24,5 +45,4 @@
 @import "./item/item.scss";
 @import "./mediaqueries/mediaquery.scss";
 
-@import "./fonts&keyframes/fonts&keyframes.scss"
 

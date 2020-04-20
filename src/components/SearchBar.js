@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import magnifier from "../img/Magnifier.svg";
 import {SearchContext} from "./searchContext";
 
-function SearchBar(){
+function SearchBar({bgLoaded}){
     const { tab,
             setTab,
             searchItem,
@@ -19,7 +19,7 @@ function SearchBar(){
 
 
     return (
-        <div className="search-bar-wrapper">
+        <div className={`search-bar-wrapper ${bgLoaded ? "search-bar-wrapper--appear" : ""}`}>
             <form className="search-form" onSubmit={handleSubmitSearch}>
                 <input  className="search-form__input"
                         type="text"                                            

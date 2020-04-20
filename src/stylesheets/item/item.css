@@ -4,15 +4,15 @@
 }
 
 .item {
-  background: black;
+  width: 80%;
+  height: 100%;
   border: 1px solid #781917;
   border-radius: 4px;
-  width: 80%;
   margin: 5% 10%;
   margin-bottom: 9.765%;
   padding: 10px;
   padding-bottom: 5%;
-  height: 100%;
+  background: black;
   -webkit-animation: fadein 1.2s;
           animation: fadein 1.2s;
 }
@@ -22,20 +22,20 @@
 }
 
 .item .item__title {
-  font-family: OswaldMedium;
   display: block;
+  font-family: OswaldMedium;
 }
 
 .item .item__artist {
+  display: block;
   font-family: OswaldExtraLight;
   font-size: 0.9em;
-  display: block;
 }
 
 .item .item__arrow {
   margin-top: 7%;
-  cursor: pointer;
   padding: 2% 0;
+  cursor: pointer;
 }
 
 .item .item__arrow:hover {
@@ -57,9 +57,9 @@
 }
 
 .item .item__info {
+  display: block;
   font-family: OswaldLight;
   font-size: 0.8em;
-  display: block;
   opacity: 0;
   -webkit-transition: 1s;
   transition: 1s;

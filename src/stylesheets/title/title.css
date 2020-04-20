@@ -2,32 +2,48 @@
   margin: 8% 0;
 }
 
-.title__text {
+.title__text-1 {
   font-family: OswaldBold;
   font-size: 1.9rem;
+  opacity: 0;
 }
 
-.title__text--mod-1 {
-  -webkit-animation: 1.5s ease 0s 1 fadeinn;
-          animation: 1.5s ease 0s 1 fadeinn;
+.title__text-1--mod-1 {
+  -webkit-transition: opacity 1.8s;
+  transition: opacity 1.8s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  opacity: 1;
 }
 
-.title__text--mod-2 {
-  -webkit-animation: 1.55s ease 0s 1 fadeinn;
-          animation: 1.55s ease 0s 1 fadeinn;
+.title__text-1--mod-2 {
+  -webkit-transition: opacity 1.8s;
+  transition: opacity 1.8s;
+  -webkit-transition-delay: 1.02s;
+          transition-delay: 1.02s;
+  opacity: 1;
 }
 
-.title__text--mod-3 {
-  -webkit-animation: 1.6s ease 0s 1 fadeinn;
-          animation: 1.6s ease 0s 1 fadeinn;
+.title__text-1--mod-3 {
+  -webkit-transition: opacity 1.8s;
+  transition: opacity 1.8s;
+  -webkit-transition-delay: 1.04s;
+          transition-delay: 1.04s;
+  opacity: 1;
 }
 
-.title__text--mod-4 {
+.title__text-2 {
+  color: #d8d8d8;
   font-family: OswaldRegular;
   font-size: 1rem;
-  color: #d8d8d8;
-  display: block;
-  -webkit-animation: 4s ease 0s 1 fadeinn;
-          animation: 4s ease 0s 1 fadeinn;
+  opacity: 0;
+}
+
+.title__text-2--mod-4 {
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
+  -webkit-transition-delay: 2s;
+          transition-delay: 2s;
+  opacity: 1;
 }
 /*# sourceMappingURL=title.css.map */

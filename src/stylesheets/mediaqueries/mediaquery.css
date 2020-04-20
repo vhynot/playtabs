@@ -4,10 +4,10 @@
     padding-left: 3%;
     padding-top: 1.5%;
   }
-  .title__text {
+  .title__text-1 {
     font-size: 3rem;
   }
-  .title__text--mod-4 {
+  .title__text-2 {
     font-size: 1.0rem;
   }
   .search-bar-wrapper {
@@ -43,10 +43,10 @@
   .title {
     margin: 4% 0;
   }
-  .title__text {
+  .title__text-1 {
     font-size: 4em;
   }
-  .title__text--mod-4 {
+  .title__text-2 {
     font-size: 1rem;
   }
   .search-bar-wrapper {

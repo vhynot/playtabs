@@ -3,14 +3,25 @@ import SearchBar from './SearchBar';
 import IndividualItem from './IndividualItem';
 import logo from '../img/Frame-1.svg';
 import {SearchContext} from "./searchContext";
+import background from "../img/music.jpg"
 
 function SearchEngine(){
     const {tab, searchItem, setSearchItem, executeSearch, setExecuteSearch} = useContext(SearchContext);
-
+    const [bgLoaded, setBgLoaded] = useState(false);
     const [songs, setSongs] = useState([]);                                // Controls fetched data
     const [isLoading, setIsLoading] = useState(false);                    // Controls fetching data time
     const [err, setErr] = useState(null);                               // Controls error of empty input
     
+    useEffect(() => {
+        const img = new Image();
+        img.src = background;
+        if (!bgLoaded){
+            img.onload = () => {
+                setBgLoaded(true)
+            }
+        }
+    }, [bgLoaded])
+
     useEffect(() => {
         if(executeSearch === true){
             const fetchItems = async searchValue => {
@@ -38,23 +49,24 @@ function SearchEngine(){
                           .map( song => {
                             return (
                                 <IndividualItem key={song.id}
-                                                item={song}/>
+                                                item={song}
+                                                bgLoaded={bgLoaded}/>
                             )
                           });
 
     return(
-        <div className="app">
-            <div className="logo">
+        <div className={`app ${bgLoaded ? "app--background-appear" : ""}`}>
+            <div className={`logo ${bgLoaded ? "logo--appear" : ""}`}>
                 <img className="logo__img" src={logo} alt="logo"/>
                 <h1 className="logo__text">Play Tabs</h1>
             </div>
             <div className="title">
-                <span className="title__text title__text--mod-1">Discover</span>
-                <span className="title__text title__text--mod-2"> new </span>
-                <span className="title__text title__text--mod-3">tablatures</span>
-                <span className="title__text title__text--mod-4">Type artist or song title and select desired tabs</span>
+                <span className={`title__text-1  ${bgLoaded ? "title__text-1--mod-1" : ""}`}>Discover</span>
+                <span className={`title__text-1  ${bgLoaded ? "title__text-1--mod-2" : ""}`}> new </span>
+                <span className={`title__text-1  ${bgLoaded ? "title__text-1--mod-3" : ""}`}>tablatures</span>
+                <div className={`title__text-2  ${bgLoaded ? "title__text-2--mod-4" : ""}`}>Type artist or song title and select desired tabs</div>
             </div>
-            <SearchBar/>
+            <SearchBar bgLoaded={bgLoaded}/>
             <div className="warning">
                 { isLoading && <span className="warning__control">Loading...</span>}
                 {err === "noResult"  && <span className="warning__control">Empty input</span>}

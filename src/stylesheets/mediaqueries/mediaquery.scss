@@ -5,9 +5,11 @@
     padding-top: 1.5%;
   }
 
-  .title__text {
-    font-size: 3rem;
-    &--mod-4 {
+  .title {
+    &__text-1 {
+      font-size: 3rem;
+    }
+    &__text-2 {
       font-size: 1.0rem;
     }
   }
@@ -47,14 +49,14 @@
 
   .title {
     margin: 4% 0;
-    }
-    
-    .title__text {
-      font-size: 4em;
-      &--mod-4 {
-        font-size: 1rem;
+    &__text-1 {
+        font-size: 4em;
       }
+    &__text-2 {
+      font-size: 1rem;
     }
+  }
+    
 
   .search-bar-wrapper {
     width: 60%;
